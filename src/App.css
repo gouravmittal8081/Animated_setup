@@ -3,6 +3,7 @@ body {
   background-color: black;
 }
 
+
 /* Container for testimonials, sets width, alignment, and styling */
 .testimonial-container {
   max-width: 80%; /* Limits the width of the container to 80% of the viewport */
