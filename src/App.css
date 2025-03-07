@@ -1,93 +1,99 @@
+/* Sets the background color of the entire page to black */
 body {
   background-color: black;
 }
+
+/* Container for testimonials, sets width, alignment, and styling */
 .testimonial-container {
-  max-width: 80%;
-  margin: 1% 17% 1% 17%;
-  justify-content: center;
-  background-color: #0d0d0d;
-  color: white;
-  padding: 17px 0px;
-  text-align: center;
-  overflow: hidden;
+  max-width: 80%; /* Limits the width of the container to 80% of the viewport */
+  margin: 1% 17% 1% 17%; /* Centers the container horizontally */
+  justify-content: center; /* Centers content inside the container */
+  background-color: #0d0d0d; /* Dark background for contrast */
+  color: white; /* White text for readability */
+  padding: 17px 0px; /* Vertical padding */
+  text-align: center; /* Centers text content */
+  overflow: hidden; /* Hides overflowing content */
 }
 
+/* Styling for the main heading in the testimonial section */
 .testimonial-heading {
-  font-size: 34px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-family: sans-serif;
+  font-size: 34px; /* Large font size for visibility */
+  font-weight: 700; /* Bold font for emphasis */
+  margin-bottom: 10px; /* Adds spacing below the heading */
+  font-family: sans-serif; /* Uses a sans-serif font */
 }
 
+/* Styling for the subtext below the heading */
 .testimonial-subtext {
-  color: #d7d7d7;
-  margin-bottom: 35px;
-  font-size: 16px;
+  color: #d7d7d7; /* Light gray text for a softer look */
+  margin-bottom: 35px; /* Adds spacing below the text */
+  font-size: 16px; /* Moderate font size */
 }
 
+/* Wrapper for testimonial items, making them scrollable horizontally */
 .testimonial-wrapper {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  white-space: nowrap;
-  position: relative;
-  height: 300px;
+  display: flex; /* Aligns items in a row */
+  overflow: hidden; /* Prevents overflow */
+  width: 100%; /* Takes full width of parent container */
+  white-space: nowrap; /* Prevents items from wrapping */
+  position: relative; /* Ensures proper positioning of children */
+  height: 300px; /* Fixed height for uniformity */
 }
 
+/* The slider that holds the testimonial cards */
 .testimonial-slider {
-  display: flex;
-  gap: 20px;
-  width: max-content;
-  align-items: center;
+  display: flex; /* Displays testimonial cards in a row */
+  gap: 20px; /* Adds spacing between cards */
+  width: max-content; /* Allows content to expand as needed */
+  align-items: center; /* Centers content vertically */
 }
 
-.testimonial-card:hover {
-  border: 1px solid white;
-  cursor: pointer;
-}
-
+/* Styling for individual testimonial cards */
 .testimonial-card {
-  background-color: #222;
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
-  text-align: center;
-  flex: 0 0 auto;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  width: 200px;
-  max-height: 400px;
+  background-color: #222; /* Dark background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+  text-align: center; /* Centers content inside */
+  flex: 0 0 auto; /* Prevents resizing */
+  overflow: hidden; /* Hides overflow content */
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column; /* Stacks content vertically */
+  align-items: center; /* Centers content */
+  justify-content: center; /* Centers content vertically */
+  height: 200px; /* Fixed height */
+  width: 200px; /* Fixed width */
+  max-height: 400px; /* Limits maximum height */
 }
 
+/* Adds hover effect to testimonial cards */
+.testimonial-card:hover {
+  border: 1px solid white; /* Highlights card on hover */
+  cursor: pointer; /* Changes cursor to pointer */
+}
+
+/* Styling for testimonial profile images */
 .testimonial-image {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  border: 3px solid #888;
+  width: 30px; /* Small profile picture */
+  height: 30px; /* Maintains square shape */
+  border-radius: 50%; /* Makes the image circular */
+  margin-bottom: 10px; /* Adds spacing below */
+  border: 3px solid #888; /* Adds border around image */
 }
 
+/* Styling for the name in the testimonial card */
 .testimonial-name {
-  font-size: 13px;
-  margin-bottom: 4px;
-  margin-top: -5px;
-  font-weight: 100;
+  font-size: 13px; /* Small font size */
+  margin-bottom: 4px; /* Adds spacing below */
+  margin-top: -5px; /* Adjusts spacing above */
+  font-weight: 100; /* Light font weight */
 }
 
+/* Styling for the testimonial text */
 .testimonial-text {
-  color: #ccc;
-  font-size: 12px;
-  line-height: 1.2;
-  max-height: 100px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding: 0 10px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  word-wrap: break-word;
-  white-space: normal;
+  color: #ccc; /* Light gray text */
+  font-size: 12px; /* Small font size */
+  line-height: 1.2; /* Adjusts line spacing */
+  max-height: 100px; /* Limits height to avoid overflow */
+  padding: 0 10px; /* Adds horizontal padding */
+  white-space: normal; /* Allows text wrapping */
 }
